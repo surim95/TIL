@@ -41,3 +41,10 @@
 2. 바로가기 위치 div id명 준비하기
 3. 위 1번 `a` 속성 `href` 값으로 `#` 먼저 작성 후 위 2번 이름 작성하기
 4. 위 3번 결과 예시) id가 abcd일 경우 `<a href="#abcd"></a>`
+-----
+### 2025/04/09
+### 링크 복습
+* `<a href="#"></a>` : 임시링크
+* `<a href="#header"></a>` : header라는 아이디를 가진 경로로 이동
+* `<a href="./basic/index.html"></a>` : 하위 basic 폴더로 이동 후 index.html로 이동
+* `<a href="./basic/index.html#main"></a>` : 하위 basic 폴더로 이동 후 index.html의 main이라는 아이디를 가진 경로로 이동
