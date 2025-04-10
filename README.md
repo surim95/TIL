@@ -48,6 +48,5 @@
 * `<a href="#header"></a>` : header라는 아이디를 가진 경로로 이동
 * `<a href="./basic/index.html"></a>` : 하위 basic 폴더로 이동 후 index.html로 이동
 * `<a href="./basic/index.html#main"></a>` : 하위 basic 폴더로 이동 후 index.html의 main이라는 아이디를 가진 경로로 이동
-### git
-* `git stash` 현재 작업 임시 저장
-* `git rebase --interactive` 특정 커밋 기준으로 이력을 재구성하고 깔끔하게 정리
+-----
+### 2025/04/10
