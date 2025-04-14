@@ -1,18 +1,17 @@
-#weather {}
-#weather h1 {}
-#weather .area {}
-#weather .temperature {}
-#weather p {}
-#weather .sub_title {}
-#weather .humidity {}
-#weather .sub_title {}
-#weather .dust {}
-#weather .result {}
-#news {}
-#news a {}
-#news .box {}
+#weather {background-color:rgba(150, 200, 230, 0.5);}
+#weather h1 {color:blue;}
+#weather .area {background-color:cornsilk; color:coral;}
+#weather .temperature {color: blueviolet;}
+#weather p {color: palevioletred;}
+#weather .sub_title {background-color:bisque; color:rgba(243, 2, 74, 1);}
+#weather .humidity {color: blueviolet;}
+#weather .dust {color:blueviolet}
+#weather .result {background-color: chartreuse; color: red;}
+#news {background-color: aquamarine;}
+#news >a {color: brown;}
+#news .box {background-color:blue;}
 #news .box a {}
-#news .box a h2 {}
-#news .box a p {}
-#news >p {}
-#news >p span {}
+#news .box a h2 {color:yellowgreen;}
+#news .box a p {color:lightcoral;}
+#news >p {color: green;}
+#news >p span {color:mediumslateblue}
