@@ -1,9 +1,64 @@
-#mobile_wrap {background-color:#0CB47F;}
-#mobile_wrap .photo {}
-#mobile_wrap .photo img {}
-#mobile_wrap h1 {}
-#mobile_wrap h1 span {}
-#mobile_wrap h2 {}
-#mobile_wrap .git {}
-#mobile_wrap .skills {}
-#mobile_wrap .skills li {}
+#mobile_wrap {
+    background-color:#0CB47F;
+    width: 440px; height: 956px; /* 전체 사이즈 */
+    text-align: center; /* 전체 수평 가운데 정렬 */
+    font-family: 'Pretendard', sans-serif; /* 전체 폰트가 같음 */
+} /* reset.css 때문에 개별 태그로 들어가서 부모 태그에 색상을 부여해도 적용안됨. 따라서 태그마다 색상 부여 */
+#mobile_wrap .photo {
+    margin-top: 109px; /* 이미지 상 여백 */
+    margin-bottom: 26px; /* 이미지 하 여백*/
+    display:inline-block;
+} /* 이미지를 감싼 class인 photo에게 줘야한다. */
+#mobile_wrap .photo img {} /* 선택자가 있어도 필요없으면 안써도 됨 */
+#mobile_wrap h1 {
+    font-weight: 500; /* web designer 폰트 굵기 */
+    font-size: 1.875rem; /* " 사이즈 */
+    letter-spacing: -0.02em; /* " 자간 */
+    line-height: 1.5; /* " 행간 */
+    margin-bottom: 86px; /* h1과 h2사이의 거리 */
+    color: #fff;
+}
+#mobile_wrap h1 span {
+    font-weight: 600; /* frontend 폰트 굵기 */
+    font-size: 2rem; /* " 사이즈 */
+    letter-spacing: -0.02em; /* " 자간 */
+    line-height: 1.5; /* " 행간 */
+    color: #fff;
+}
+#mobile_wrap h2 {
+    font-weight: 400; /* 하단 내용 제목 폰트 굵기 */
+    font-size: 1rem; /* " 폰트 크기 */
+    letter-spacing: -0.02em; /* " 자간 */
+    line-height: 1.5; /* " 행간 */
+    width: 189px;
+    margin-right: auto;
+    margin-left: 71px; /* 왼쪽 여백 */
+    text-align: left; 
+    color: #fff;
+}
+#mobile_wrap .git {
+    font-weight: 400; /* git링크 폰트 굵기 */
+    font-size: 1rem; /* " 크기 */
+    letter-spacing: -0.02em; /* " 자간 */
+    line-height: 1.5; /* " 행간 */
+    display: block;
+    width: 189px;
+    margin-right: auto;
+    margin-left: 71px; /* 왼쪽 여백 */
+    text-align: left; 
+    color: #fff;
+}
+#mobile_wrap .skills {
+    width: 189px;
+    margin-right: auto;
+    margin-left: 71px; /* 왼쪽 여백 */
+    text-align: left;
+}
+#mobile_wrap .skills li {
+    font-weight: 400;  /* 목록 굵기 */
+    font-size: 1rem; /* 목록 폰트 크기 */
+    letter-spacing: -0.02em; /* 목록 자간 */
+    line-height: 1.5; /* 목록 행간 */
+    /* margin-left: 25px; */ /* #mobile_wrap .skills에서 이미 왼쪽 정렬 후 여백을 받았지만 목록 태그이기 때문에 목록을 표시하는 점 때문에 여백을 더 줌. */
+    color: #fff;
+}

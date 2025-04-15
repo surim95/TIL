@@ -1,0 +1,66 @@
+h1 {
+    background-color: yellow;
+    font-family:'궁서체2','바탕체2', serif;
+    /* 글꼴 명이 한글 또는 공백이 포함되어있을 경우 따옴표를 묶어서 작성해야 한다. */
+}
+h2 {
+    background-color: aqua;
+    font-family:'맑은 고딕','나눔고딕', sans-serif;
+}
+h3 {
+    background-color:blueviolet;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+}
+h4 {
+    background-color: rgba(5, 125, 240, 0.4);
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 600;
+}
+h5 {
+    background-color: rgba(50, 100, 80, 0.4);
+    color:rgba(210, 80, 80, 1);
+    font-family: 'Black Han Sans', 'Nanum Myeongjo', 'Noto Sans KR';
+    
+}
+P {
+    background-color: orange;
+    font-family:'Pretendard', sans-serif;
+    font-weight: 800;/* 글꼴 굵기 설정 값 (기본값: 400) */
+}
+.size_wrap {
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 1.25rem;/* 부모 크기 */
+}
+.size_wrap dt {}
+.size_wrap dd {font-size: 1rem;}/* 1em=100% 따라서 부모 크기 1.25em이니까 1.25 크기 그대로 */
+.size_wrap .content {
+    font-size: 0.875rem;
+    font-weight: 600;/* thin extralight light regular mideum semibold bold extrabold black */
+    font-family: 'Pretendard', sans-serif;
+    line-height: 1.7;
+}
+.details {
+    background-color: #fff;
+    color: #4d4d4d;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.02em; /* figma: -2% */
+
+}
+.details code {
+    background-color: yellow;
+    color: blue;
+}
+.box {
+    background-color: #000;
+    color: #fff;
+    width: 200px; height: 200px;
+    text-align:center;
+    /* text-align 속성은 속성값을 입력한 대상 기준을 그 자식 또는 자손이 인라인 요소일 경우만 적용된다. (단순 글자도 인라인으로 인식함.) */
+    line-height:200px;
+}
+/* line-height을 이용한 수직정렬 주의사항 */
+/* 요소의 height 값이 px로 작성된 경우 그 값을 그대로 line-height의 px값으로 작성하여 수직 가운데 정렬을 적용한다. 단, 글자가 2줄 이상일 경우 적용해서 안되며 1줄일때만 사용해야 한다. */
