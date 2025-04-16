@@ -51,7 +51,7 @@
 -----
 ### 2025/04/15
 ### CSS style Sheet
-* 외부스타일시트 파일 저장은 **syles** 폴더에 `파일명.css` 저장한다.
+* 외부스타일시트 파일 저장은 **styles** 폴더에 `파일명.css` 저장한다.
 * 위 파일 생성 후 CSS 연결을 원하는 HTML 파일 head위치에 `<link>`태그로 연결한다.
 * HTML 작성 후 HTML의 모든 디자인형태를 초기화하는 `reset.css` 반드시 연결!
 * 웹글꼴(Noto Sans KR, Pretendard 등) 연결 시 HTML 파일에 `<link>` 태그 연결!

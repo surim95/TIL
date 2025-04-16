@@ -24,6 +24,8 @@
     letter-spacing: -0.02em; /* " 자간 */
     line-height: 1.5; /* " 행간 */
     color: #fff;
+    padding-left: 30px;
+    background-color: aqua;
 }
 #mobile_wrap h2 {
     font-weight: 400; /* 하단 내용 제목 폰트 굵기 */
