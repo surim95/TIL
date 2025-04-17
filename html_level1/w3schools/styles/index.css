@@ -1,0 +1,55 @@
+/* index.html stylesheet */
+#wrap {
+    background-color: #3330E4;
+    width: 440px;
+    height: 956px;
+    text-align: center;
+}
+#wrap h1 {
+    padding-top: 243px;
+    margin-bottom: 222px;
+}
+#wrap h1 img {}
+#wrap .btn_wrap {
+    width: 300px;
+    /* 블록의 너비값을 부모보다 작게 설정했을 때 블록을 가운데 정렬하고 싶다면? */
+    margin-left: auto;
+    margin-right: auto;
+    /* 높이는 정해놓지 않음. 자식들의 총 높이에 따라 자동으로 설정하기 위해서. */
+    text-align: left;/* btn_wrap의 인라인 자식, 자손 왼쪽 정렬 // Forgot password 왼쪽 정렬 */
+}
+/* .btn_wrap의 자식들이 인라인 요소라 한줄로 써지기 때문에 블록으로 만들어주기 위해 선택자를 하나 추가하여 공통값을 준다. */
+#wrap .btn_wrap a {
+    display: block; /* 블록의 기본 넓이는 부모와 같다. */
+    text-align: center;/* 글자보다 넓은 너비를 가진 a의 자식 글자를 가운데 정렬 // Forgot password 왼쪽 정렬로 인해 다른 글자들이 왼쪽 정렬된 것을 중앙 정렬 시켜준다. */
+}
+#wrap .btn_wrap .login_btn {
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: -0.02rem;
+    color: #3330E4;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fff;
+    /* border: 선두께 선모양 선색상; */
+    border-radius: 25px;
+}
+#wrap .btn_wrap .signup_btn {
+    margin-top: 12px;
+    margin-bottom: 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: -0.02rem;
+    color: #3330E4;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fff;
+    border-radius: 25px;
+}
+#wrap .btn_wrap .forgotpw_btn {
+    font-size: 0.75rem;
+    font-weight: 300;
+    letter-spacing: -0.02rem;
+    color: #fff;
+    display: inline;
+}
