@@ -6,15 +6,18 @@
     text-align: center;
 }
 #wrap h1 {
-    padding-top: 243px;
-    margin-bottom: 222px;
+    padding: 243px 0 0; /* 상|좌우|하 */
+    margin: 0 0 222px;
 }
-#wrap h1 img {}
+#wrap h1 img {
+
+}
 #wrap .btn_wrap {
     width: 300px;
     /* 블록의 너비값을 부모보다 작게 설정했을 때 블록을 가운데 정렬하고 싶다면? */
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    /* margin-left: auto;
+    margin-right: auto; */
     /* 높이는 정해놓지 않음. 자식들의 총 높이에 따라 자동으로 설정하기 위해서. */
     text-align: left;/* btn_wrap의 인라인 자식, 자손 왼쪽 정렬 // Forgot password 왼쪽 정렬 */
 }
@@ -34,8 +37,9 @@
     border-radius: 25px;
 }
 #wrap .btn_wrap .signup_btn {
-    margin-top: 12px;
-    margin-bottom: 16px;
+    /* margin-top: 12px;
+    margin-bottom: 16px; */
+    margin: 12px 0 16px 0;
     font-size: 0.875rem;
     font-weight: 600;
     color: #3330E4;
