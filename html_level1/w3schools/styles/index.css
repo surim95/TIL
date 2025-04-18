@@ -26,7 +26,6 @@
 #wrap .btn_wrap .login_btn {
     font-size: 0.875rem;
     font-weight: 600;
-    letter-spacing: -0.02rem;
     color: #3330E4;
     height: 40px;
     line-height: 40px;
@@ -39,7 +38,6 @@
     margin-bottom: 16px;
     font-size: 0.875rem;
     font-weight: 600;
-    letter-spacing: -0.02rem;
     color: #3330E4;
     height: 40px;
     line-height: 40px;
@@ -49,7 +47,6 @@
 #wrap .btn_wrap .forgotpw_btn {
     font-size: 0.75rem;
     font-weight: 300;
-    letter-spacing: -0.02rem;
     color: #fff;
     display: inline;
 }

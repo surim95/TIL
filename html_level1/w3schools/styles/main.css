@@ -1,9 +1,8 @@
 /* main.html stylesheet */
 #wrap {
-/*     background-color: aqua; */
     width: 440px;
     height: 956px;
-    text-align: left;
+/*     text-align: left; 기본이 왼쪽 정렬 */
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -11,78 +10,90 @@
     color: #3330E4;
     font-size: 2.5rem;
     font-weight: 700;
-    letter-spacing: -0.02rem;
     padding-top: 187px;
     margin-bottom: 20px;
 }
 #wrap >p {
     color: #3330E4;
     font-size: 0.875rem;
-    letter-spacing: -0.02rem;
     font-weight: 400;
-    margin-bottom: 102px;
 } /* #wrap의 모든 자식p */
-#wrap h1+p {
-} /* #wrap의 h1옆에 p */
+#wrap h1+p {} /* #wrap의 h1옆에 p */
 #wrap #info_wrap {
     margin-bottom: 30px;
+    margin-top: 102px;
 }
 #wrap #info_wrap h2 {
     color: #3330E4;
     font-weight: 600;
     font-size: 1.375rem;
-    letter-spacing: -0.02rem;
     margin-bottom: 16px;
 }
+
+/* 비슷한 애들끼리 근처에 위치해두기 */
 #wrap #info_wrap p {
     font-size: 0.875rem;
     font-weight: 300;
 }
-#wrap #info_wrap p input {
+#wrap #info_wrap .space {
     margin-bottom: 50px;
+}
+#wrap #info_wrap .login_space {
+    margin-bottom: 16px;
+}
+
+/* 속성 선택자 입력 방법 */
+#wrap #info_wrap p input::placeholder {
+    font-size: 0.875rem;
+    font-weight: 300;
+    color: #aaa;
+}
+#wrap #info_wrap p input {
     border: 1px solid #F637EC;
     border-radius: 25px;
+    width: 410px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 20px;
-    width: 410px;
+    padding-right: 20px;
 }
 #wrap #info_wrap p #login_btn {
     background-color: #fff;
-    margin-bottom: 16px;
     border: 1px solid #F637EC;
     border-radius: 25px;
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
     width: 410px;
     color: #3330E4;
     font-size: 0.875rem;
     font-weight: 600;
-    letter-spacing: -0.02rem;
+    /* text-align: center; 
+    버튼은 크게 사용하는 경우가 많아서 기본 설정이 블록처럼 가운데로 정렬이 된다.
+    버튼의 기본 정렬이 center. 원하지 않으면 reset에서 설정*/
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 #wrap #info_wrap p .forgotpw_Google {
     display: block;
     text-align: center;
     border: 1px solid #F637EC;
     border-radius: 25px;
-    padding-top: 15px;
-    padding-bottom: 15px;
     color: #3330E4;
     font-size: 0.875rem;
     font-weight: 600;
-    letter-spacing: -0.02rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 #wrap #info_wrap+p {
     font-size: 0.75rem;
     font-weight: 400;
-    letter-spacing: -0.02rem;
     text-align: center;
     color: #F637EC;
 } /* #wrap의 info_wrap의 옆에 있는 p */
 #wrap p .sign_free {
     font-size: 0.75rem;
     font-weight: 600;
-    letter-spacing: -0.02rem;
     color: #F637EC;
 } 
