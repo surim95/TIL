@@ -5,7 +5,7 @@ header, footer, nav, aside, article, section, figure, figcaption, main, details,
 form, fieldset, legend, input, button, select, option, textarea,
 span, em, strong, img, sup, sub, br, del, q, s, mark, code, a {
     margin: 0; padding: 0;
-    line-height: 1; letter-spacing: -0.02em; word-spacing: 0;
+    line-height: 1; letter-spacing: 0em; word-spacing: 0;
     font-size:1em; font-weight: 400; font-style: normal;
     color: #000;
     font-family: 'Pretendard', sans-serif;

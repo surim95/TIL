@@ -5,6 +5,7 @@
 /*     text-align: left; 기본이 왼쪽 정렬 */
     padding-left: 15px;
     padding-right: 15px;
+    letter-spacing: -0.02rem;
 }
 #wrap h1 {
     color: #3330E4;
