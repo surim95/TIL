@@ -1,0 +1,29 @@
+/* bg.html stylesheet */
+.bg {
+    width: 1000px; height: 2000px;
+    background-repeat: no-repeat;
+}
+.bg1 {
+    background: yellow url(https://i.pinimg.com/736x/fe/95/46/fe9546101ac11fe6500c000e82522c59.jpg) right center;
+    /* background-color: yellow;
+    background-image: url(https://i.pinimg.com/736x/fe/95/46/fe9546101ac11fe6500c000e82522c59.jpg);
+    background-repeat: repeat-y;
+    background-position: 30% 40%;
+    background-size:60% auto; */
+}
+.bg2 {
+    background: aqua url(../images/test.jpg) repeat-x center 60% / 30%;
+    /* background-color: aqua;
+    background-image: url(../images/test.jpg);
+    background-repeat: repeat-x;
+    background-position: center 60%; */
+}
+.bg3 {
+    background: antiquewhite url(https://i.pinimg.com/736x/22/52/9f/22529f942d0ede6fc6350f2c53560a33.jpg) no-repeat fixed 45% center / cover;
+    height: 5000px;
+    /* background-image: url(https://i.pinimg.com/736x/22/52/9f/22529f942d0ede6fc6350f2c53560a33.jpg);
+    background-color: antiquewhite;
+    background-position: 45% top;
+    background-size: cover;
+    background-attachment: fixed; */
+}
