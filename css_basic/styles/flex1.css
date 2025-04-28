@@ -1,0 +1,19 @@
+/* flex1.css */
+.wrap1 {
+    background-color: lightgray;
+    display: flex;
+    /* flex-direction: row; */ /* container 작성하는 메인축정렬방법 */
+    /* flex-wrap: wrap-reverse; *//* container의 item 줄바꿈 처리 */
+    /* row 수평 정렬, row-feverse 4321 수평 역순 정렬 */
+    /* column 수직 정렬, column-reverse 수직 역순 정렬 */
+    flex-flow: column wrap;/* 방향과 줄바꿈 한번에 작성하는 속성 */
+    justify-content: flex-end;/* space-around 양쪽 끝을 떨어트리면서 item간의 간격을 주며 정렬 */
+    height: 600px; /* 수직으로 정렬 시 높이 여유가 필요. 부모는 자식의 크기 합친 만큼의 크기이므로 정렬이 보이지 않음. */
+}
+.wrap1 li {
+    width: 100px; height: 100px; font-size: 3rem;
+}
+.wrap1 li:nth-child(odd) {background-color: aqua;}
+.wrap1 li:nth-child(even) {background-color: yellow;}
+/* .wrap1 li:nth-child(3) {background-color: coral;}
+.wrap1 li:nth-child(4) {background-color: lime;} */
