@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform | CSS</title>
+    <link rel="stylesheet" href="../css_basic/styles/reset.css">
+    <style>
+        .parent {
+            background-color: #eee; padding: 30px;
+        }
+        .parent .child {
+            width: 100px; height: 100px;
+            border: 1px solid #000;
+        }
+        .parent .child1 {
+            background-color: aqua;
+            transition: background-color 2s;
+        }
+        .parent .child1:hover {
+            background-color: lime;
+            /* transition:애니메이션적용속성 지속시간; */
+        }
+        .parent .child2 {
+            transition: width 0.5s, height 1s;
+        }
+        .parent .child2:hover {
+            width: 150px; height: 200px;
+        }
+        .parent .child3 {
+            transition: border 0.3s;
+        }
+        .parent:hover .child3 {
+            border: 5px solid #f00;
+        }
+        .parent .child4 {
+            border-radius: 50%;
+            position:relative; left:0;
+            transition: left 1s ease-out;
+        }
+        .parent:hover .child4 {
+            left:300px;
+        }
+        .parent .child5 {
+            margin: 0 auto;
+            display: none;
+            overflow: hidden;
+            text-align: center;
+        }
+        .parent:hover .child5 {
+            display: block;
+        }
+        .parent .child5 h2 {
+            width: 100px; height: 30px;
+            background-color: beige;
+            font-size: 1.275rem;
+            font-weight: 600;
+        }
+        .parent .child5:hover h2 {
+            color: #55eebb;
+        }
+        .parent .child5 p {
+            position: relative; top: 0;
+            transition: top 1s;
+        }
+        .parent .child5:hover p {
+            top: 25px;
+        }
+        .parent .child6 {
+            width: 400px; height: 600px;
+            background-image: url(https://i.pinimg.com/736x/6d/66/c9/6d66c92e73f77548a9085b04f627bb86.jpg);
+            /* background-size: cover; */
+            background-size: 120%;
+            background-position: 0 0;
+            /* transition: background-position 2s, background-size 1s; */
+            transition: all 1s;
+        }
+        .parent .child6:hover {
+/*             background-position: 100px 0;
+ */            background-size: 130%;
+        }
+        .parent .child7 {
+            width: 800px; height: 239px;
+            background-image: url(./images/bg.jpg);
+            background-position: 0 0;
+            background-size: cover;
+            background-repeat:repeat-x;
+            transition: all 20s linear;
+        }
+        .parent .child7:hover {
+            background-position: -3000px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>transition</h1>
+    <p>기존 CSS 속성이 사용자의 동작에 의해서 변경될 때 애니메이션 효과를 주는 속성</p>
+    <div class="parent">
+        <div class="child child1"></div>
+        <div class="child child2"></div>
+        <div class="child child3"></div>
+        <div class="child child4"></div>
+        <div class="child child5">
+            <h2>한글</h2>
+            <p>가나다라마바사</p>
+        </div>
+        <div class="child child6"></div>
+        <div class="child child7"></div>
+    </div>
+</body>
+</html>
