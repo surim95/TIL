@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation | keyframes | CSS</title>
+    <link rel="stylesheet" href="../css_basic/styles/reset.css">
+    <style>
+        main {background: #eee; padding: 50px; height: 100vh;}
+        main .traget {}/* 공통 */
+        main .ball {
+            background: radial-gradient(at left top, #fff, #222);
+            background-size: 150%;
+            /* background-position: 100%; */
+            width: 50px; height: 50px; border-radius: 50%;
+            animation:right500 1s linear 1s 3 reverse;
+        } /* 개별 */
+        /* 애니메이션 적용 순서 1. 키프레임(장면) 생성 2. 애니메이션 호출 */
+        @keyframes right500 {
+            from {transform: translateX(0);}
+            to {transform: translateX(500px);}
+        }
+        main .ball2 {
+            background: radial-gradient(at left top, #fff, #00eeff, #eeaa22);
+            width: 50px; height: 50px; border-radius: 50%;
+            background-size: 150%;
+            animation: bottom400 1s;
+        }
+        @keyframes bottom400 {
+            from {transform: translateY(0);}
+            to {transform: translateY(400px)}
+        }
+        /* main .ball3 {
+            animation: zigzag 3s ease-in infinite alternate;
+        }
+        main .ball3 img {
+            width: 80px;
+            animation: rotate360 2s infinite;
+        } */
+        @keyframes rotate360 {
+            from {transform: rotate(0);}
+            to {transform: rotate(360deg);}
+        }
+        @keyframes zigzag {
+            0% {transform: translate(0,0);}
+            25% {transform: translate(500px,0);}
+            50% {transform: translate(0, 500px);}
+            75% {transform: translate(500px, 500px);}
+        }
+        section {}
+        section .ad {height: 50vh; padding: 50px;
+        }
+        section .ad span {
+            text-transform: uppercase;
+            font-size: 3rem; font-weight: 800;
+            animation: ad_txt 2s both;
+            display: inline-block;
+        }
+        section .ad span:nth-child(1) {
+            animation-delay: 0s;
+        }
+        section .ad span:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        section .ad span:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+        section .ad span:nth-child(4) {
+            animation-delay: 0.6s;
+        }
+        @keyframes ad_txt {
+            from {transform: translateY(50px); opacity: 0;}
+            to {transform: translateY(0); opcity: 1;}
+        }
+        section .ad2 {
+            height: 50vh; padding: 50px;
+        }
+        section .ad2 span {
+            animation: ad2_txt 1.5s ease-in-out 2 alternate both;
+            display: inline-block;
+            font-size: 2rem; font-weight: 600;
+        }
+        section .ad2 span:nth-child(1) {
+            animation-delay: 0s;
+        }
+        section .ad2 span:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        section .ad2 span:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+        section .ad2 span:nth-child(4) {
+            animation-delay: 0.6s;
+        }
+        section .ad2 span:nth-child(5) {
+            animation-delay: 0.8s;
+        }
+        section .ad2 span:nth-child(6) {
+            animation-delay: 1s;
+        }
+        section .ad2 span:nth-child(7) {
+            animation-delay: 1.2s;
+        }
+        @keyframes ad2_txt {
+            from {transform: translateY(50px) scaleY(0); opacity: 0;}
+            to {transform: translateY(0) scaleX(100%); opacity: 1;}
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="target ball"></div>
+        <div class="target ball2"></div>
+        <div class="target ball3"><img src="https://cdn-icons-png.flaticon.com/128/3012/3012458.png" alt=""></div>
+    </main>
+    <section>
+        <div class="ad">
+            <span>h</span>
+            <span>t</span>
+            <span>m</span>
+            <span>l</span>
+        </div>
+        <div class="ad2">
+            <span>주</span>
+            <span>말</span>
+            <span>이</span>
+            <span>최</span>
+            <span>고</span>
+            <span>야</span>
+            <span>!</span>
+        </div>
+    </section>
+</body>
+</html>

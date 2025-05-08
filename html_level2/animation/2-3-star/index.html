@@ -31,14 +31,18 @@
         #menu_title span {font-weight:800;}
         #menu_title img {padding:0 10px;}
         /* 메뉴내용 */
-        .menu_contents {position:relative;}
+        .menu_contents {position:relative; }
         .menu_contents .menu {
             display:flex; justify-content:space-between;
             position:absolute; left:0; top:0;
         }
         .menu_contents .menu a {
             margin-right:10px; overflow:hidden; position:relative;
-            border-radius:10px; 
+            border-radius:10px;
+            display: block;
+        }
+        .menu_contents .menu a:hover {
+            transform: rotateY(180deg);
         }
         .menu_contents .menu a:last-child {margin-right:0}
         .menu_contents .menu a img {width:100%;}
@@ -49,6 +53,7 @@
             width:100%; height:100%; display:block;
             position:absolute; left:0; top:0;
             text-align:center;
+            transform: rotateY(180deg);
         }
         .menu_contents .menu .info span:first-child {padding-top:40%;}
         .menu_contents .menu .info span {
