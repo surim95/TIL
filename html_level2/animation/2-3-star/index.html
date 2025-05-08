@@ -31,7 +31,7 @@
         #menu_title span {font-weight:800;}
         #menu_title img {padding:0 10px;}
         /* 메뉴내용 */
-        .menu_contents {position:relative; }
+        .menu_contents {position:relative;}
         .menu_contents .menu {
             display:flex; justify-content:space-between;
             position:absolute; left:0; top:0;
@@ -41,11 +41,13 @@
             border-radius:10px;
             display: block;
         }
-        .menu_contents .menu a:hover {
-            transform: rotateY(180deg);
+        .menu_contents .menu a:hover >* {
+            animation: hover 0.3s both;
+            display: block;
         }
         .menu_contents .menu a:last-child {margin-right:0}
-        .menu_contents .menu a img {width:100%;}
+        .menu_contents .menu a img {width:100%;            
+        }
         /* 커피정보 */
         .menu_contents .menu .info {
             background:rgba(0,102,51,0.8); /*#006633 == rgb(0,102,051)*/
@@ -53,12 +55,12 @@
             width:100%; height:100%; display:block;
             position:absolute; left:0; top:0;
             text-align:center;
-            transform: rotateY(180deg);
+            display: none; 
         }
         .menu_contents .menu .info span:first-child {padding-top:40%;}
         .menu_contents .menu .info span {
             display:block; font-weight: 600;
-            line-height:1.5;
+            line-height:1.5; color: #fff;
         }
         /* active class + animation */
         .active {font-weight:800;}
@@ -66,6 +68,16 @@
             content:''; display:block;
             width:100%; height:2px; background:#006633;
             position:absolute; bottom:-10px; left:0;
+        }
+        .menu_contents .menu2 {
+            display: none;
+        }
+        .menu_contents .menu3 {
+            display: none;
+        }
+        @keyframes hover {
+            from {border-radius: 0;}
+            to {border-radius: 50%;}
         }
     </style>
     <script>
