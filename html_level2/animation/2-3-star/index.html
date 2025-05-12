@@ -35,6 +35,10 @@
         .menu_contents .menu {
             display:flex; justify-content:space-between;
             position:absolute; left:0; top:0;
+            display: none; /* display: flex;를 무시하고 공통 class에 display: none;을 줘서 전체를 가리고 menu3에 display: flex;를 주어 나타냄*/
+        }
+        .menu_contents .menu1 {
+            display: flex;
         }
         .menu_contents .menu a {
             margin-right:10px; overflow:hidden; position:relative;
@@ -69,12 +73,12 @@
             width:100%; height:2px; background:#006633;
             position:absolute; bottom:-10px; left:0;
         }
-        .menu_contents .menu2 {
+        /* .menu_contents .menu2 {
             display: none;
         }
         .menu_contents .menu3 {
             display: none;
-        }
+        } */ /* 유지보수에 좋지 않으므로 공통 class에 display:none을 준다. */
         @keyframes hover {
             from {border-radius: 0;}
             to {border-radius: 50%;}
