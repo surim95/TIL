@@ -64,7 +64,16 @@
         .menu_contents .menu .info span:first-child {padding-top:40%;}
         .menu_contents .menu .info span {
             display:block; font-weight: 600;
-            line-height:1.5; color: #fff;
+            line-height:1.5; /* color: #fff; */
+            opacity: 0;
+        }
+        .menu_contents .menu .info span:hover {
+            opacity: 1;
+        }
+        .menu_contents .info a {display: none;}
+        .menu_contents .menu .a:hover{
+            display:block;
+            animation:hover 0.2s linear both ;
         }
         /* active class + animation */
         .active {font-weight:800;}

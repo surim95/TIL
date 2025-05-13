@@ -1,48 +1,9 @@
-/* animation.css */
-header {}
-header h1 {}
-header h1 a {}
-header h1 a img {}
-header nav {}
-header nav a {}
-header .right a{}
-header .mobile_nav_icon{}
-header .mobile_nav_icon a{}
-header .mobile_nav_icon a img {}
-main {}
-main .txt {}
-main .txt img{}
-main .bg_wrap {
-    overflow: hidden;
-}
-main .bg_wrap .bg {
-    animation: bg 5s linear infinite;    
-}
-main .bg_wrap .bg1 {
-    animation-duration: 30s;
-}
-main .bg_wrap .bg2 {
-    animation-duration: 20s;
-}
-main .bg_wrap .bg3 {
-    animation-duration: 10s;
-}
-main .car {}
-main .car #car {}
-main .car #left_tire {
-    animation: tire 3s linear infinite;
-}
-main .car #right_tire {
-    animation: tire 3s linear infinite;
-}
-main .scroll {}
-main .scroll img {}
 /* animation */
 @keyframes tire {
     from {transform:rotate(0)}
     to {transform:rotate(360deg)}
 }
 @keyframes bg {
-    0% {transform: translateX(0)}
-    50% {transform: translateX(100%)}    
+    from {background-position-x: 0;} /* background 이미지가 반복되고 있고 이 background 이미지가 옆으로 이동하는 것이므로 background-position을 사용. 요소일 경우 translate */
+    to {background-position-x: 1000px;}
 }
