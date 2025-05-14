@@ -21,6 +21,9 @@
             border-bottom:1px solid rgba(255,255,255,0.2);
             width:80%; margin:0 auto; display:flex; justify-content:space-around;
         }
+        header nav:hover {
+            animation: line_hover_ani 1s linear both;
+        }
         header nav a {padding:10px 0; position:relative;}
         header nav a::after {
             content:''; display:block;
@@ -31,8 +34,15 @@
         main {position:relative; width:1400px; height:80vh; margin:0 auto;}
         main img {
             position:absolute; left:0; bottom:100px;
+            animation: img_op 1s linear both;
         }
-
+        @keyframes img_op {
+            from {opacity: 0;}
+            to {opacity: 100%;}
+        }
+        @keyframes line_hover_ani {
+            from 
+        }
     </style>
     <script>
         window.onload=function(){
